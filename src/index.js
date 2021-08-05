@@ -64,7 +64,25 @@ const loadData = async () => {
     await navigator.geolocation.getCurrentPosition(success, error, options)
 }
 
-setInterval(loadData,3000);
+const loadTime = () => {
+    var today = new Date();
+    var time = today.getHours() + ":"+today.getMinutes() + ":" + today.getSeconds();
+    document.getElementById("time-text").innerHTML = time;
+}
+
+try
+{
+    navigator.geolocation.getCurrentPosition(success, error, options)
+}
+catch (e)
+{
+    console.log("Error " + e)
+}
+
+// setInterval(loadData,300000);
+
+setInterval(loadTime,1000);
+setInterval(loadData,300000);
   
 
 

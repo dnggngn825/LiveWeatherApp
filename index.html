@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="./src/index.css">
+    <link rel="stylesheet" href="./src/spinner.css">
     <link rel="stylesheet" href="./src/bootstrap/dist/css/bootstrap.min.css">
     <title>Weather App</title>
 </head>
 <body>
-    <div class="container fluid">
+    <!-- Loading page -->
+    <div class="loader-wrapper">
+        <div class="spinner">
+            <div class="inner"></div>
+        </div>
+    </div>
+
+    <!-- Main page -->
+    <div class="container fluid hide" id="main-body">
         <div class="container-sm" id="main-box">
+            <div class="row" id="time-box">
+                <h1 class="mt-2 w-auto lead" id="time-text"></h1>
+            </div>
             <div class="row mt-2" id="title">
                 <h4 class="fw-light" id="title-text">Loading location ...</h4>
             </div>
@@ -44,4 +56,5 @@
 </body>
 <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> -->
 <script src="./src/index.js"></script>
+<script src="./src/spinner.js"></script>
 </html>
