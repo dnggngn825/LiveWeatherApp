@@ -43,7 +43,7 @@ function success(pos) {
                 feel.innerHTML = "Feel like " + Math.round(data.main.feels_like) + '\xB0C';
                 weatherDes.innerHTML = word[0].toUpperCase() + word.slice(1).toLowerCase();
                 humid.innerHTML = "Humidity: " + data.main.humidity + "%";
-                wind.innerHTML = "Wind speed: " + data.wind.speed + " km/h";
+                wind.innerHTML = "Wind speed: " + data.wind.speed*3.6 + " km/h";
                 min.innerHTML = Math.round(data.main.temp_min) ;
                 max.innerHTML = Math.round(data.main.temp_max) ;
 
