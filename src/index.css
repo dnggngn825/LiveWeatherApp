@@ -1,0 +1,58 @@
+#main-box
+{
+    border-style: solid;
+    border-width: 1px;
+    width: 350px;
+    border-radius: 1rem;
+    background-color: rgba(20, 20, 20, 0.822);
+}
+#max-min-temp-box
+{
+    width: 100%;
+    text-align: right;
+}
+/* #main-temp
+{
+    padding-left: 0 !important;
+} */
+#min-max-col
+{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    padding-right: 0 !important;
+}
+
+.list-group-item
+{
+    background-color: rgba(20, 20, 20, 0) !important;
+    color: white !important;
+}
+
+#temp-text
+{
+    font-size: 5rem !important;
+    font-weight: 500;
+}
+
+body
+{
+    background-image: url('../photos/melbourne.jpeg');
+    backdrop-filter: blur(8px);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: white !important;
+}
+
+.container-fluid
+{
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}

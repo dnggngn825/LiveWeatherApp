@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container fluid">
+        <div class="container-sm" id="main-box">
+            <div class="row mt-2" id="title">
+                <h4 class="fw-light" id="title-text">Loading location ...</h4>
+            </div>
+            <div class="row fw-bolder m-2 justify-content-center">
+                <div class="row">
+                    <div class="col-3" id="min-max-col">
+                        <div class="row-cols-sm-1" id="max-min-temp-box">
+                            <h4 class="fw-light" id="max-temp-text"></h4>
+                        </div>
+                        <div class="row-cols-sm-1" id="max-min-temp-box">
+                            <h4 class="fw-light" id="min-temp-text"></h4>
+                        </div>
+                    </div>
+                    <div class="col" id="main-temp"><h1 class=" w-auto lead" id="temp-text">--&#8451;</h1></div>
+                </div>
+                <div class="row fw-light justify-content-center">
+                    <p id="feel-like-text" class="w-auto"></p>
+                </div>
+            </div>
+            
+            <div class="row p-2">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item" ><h3 id="weather-description"></h3></li>
+                    <li class="list-group-item" ><h3 id="humidity-text">Humidity: --</h3></li>
+                    <li class="list-group-item"><h3 id="wind-speed-text">Wind Speed: --km/h</h3></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="index.js"></script>
+</html>
